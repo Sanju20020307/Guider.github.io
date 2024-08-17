@@ -77,12 +77,11 @@
         <h2>JOURNEY BEYOND</h2>
         <ul>
             <li><a href="#">Dashboard</a></li>
-            <li><a href="#">Trips</a></li>
-            <li><a href="#">Service Providers</a></li>
-            <li><a href="#">Travelers</a></li>
-            <li><a href="#">Income Report</a></li>
-            <li><a href="#">Messages</a></li>
-            <li><a href="#">Settings</a></li>
+            <li><a href="#">Availability</a></li>
+            <li><a href="#">Responds to bookings</a></li>
+            <li><a href="#">Payments</a></li>
+            <li><a href="#">Rates</a></li>
+            <li><a href="#">Managing Bookings</a></li>
             <li><a href="#">Sign Out</a></li>
         </ul>
     </div>
@@ -92,15 +91,13 @@
             <input type="text" placeholder="Search here...">
         </div>
         <div class="dashboard">
-            <div class="card">Total Sales</div>
-            <div class="card">Total Order</div>
-            <div class="card">Product Sold</div>
-            <div class="card">New Customers</div>
-            <div class="card">Total Revenue</div>
-            <div class="card">Customer Satisfaction</div>
-            <div class="card">Target vs Reality</div>
-            <div class="card">Sales Mapping by Country</div>
-            <div class="card">Volume vs Service Level</div>
+            <div class="card">Total Bookings</div>
+            <div class="card">Managing Bookings</div>
+            <div class="card">Updating the availability</div>
+            <div class="card">Responds to bookings</div>
+            <div class="card">View of the payments</div>
+            <div class="card">Rate management</div>
+           
         </div>
     </div>
 </body>
