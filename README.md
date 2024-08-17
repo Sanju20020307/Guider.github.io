@@ -3,67 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel Website - Guider Section</title>
+    <title>Dashboard</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
         }
-        .guider-section {
-            background-color: #fff;
+        .sidebar {
+            width: 250px;
+            background-color: #e6f7f9;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
             padding: 20px;
-            margin: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 2px 0 5px rgba(0,0,0,0.1);
         }
-        .guider-section h2 {
-            text-align: center;
+        .sidebar h2 {
+            margin: 0 0 20px;
+            font-size: 24px;
+        }
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            margin: 20px 0;
+        }
+        .sidebar ul li a {
             color: #333;
+            text-decoration: none;
+            font-size: 18px;
+            display: block;
         }
-        .guider {
-            display: flex;
-            align-items: center;
-            margin-bottom: 20px;
+        .sidebar ul li a:hover {
+            color: #007bff;
         }
-        .guider img {
-            border-radius: 50%;
-            margin-right: 20px;
+        .main-content {
+            margin-left: 270px;
+            padding: 20px;
         }
-        .guider-info {
-            max-width: 600px;
+        .main-content .dashboard {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+            margin-top: 40px;
         }
-        .guider-info h3 {
-            margin: 0;
-            color: #555;
+        .dashboard .card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            font-size: 18px;
         }
-        .guider-info p {
-            margin: 5px 0;
-            color: #777;
+        .search-bar {
+            margin: 20px 0;
+            text-align: right;
+        }
+        .search-bar input[type="text"] {
+            padding: 10px;
+            width: 300px;
+            border: 1px solid #ddd;
+            border-radius: 20px;
+            font-size: 16px;
         }
     </style>
 </head>
 <body>
-    <section class="guider-section">
-        <h2>Meet Our Travel Guides</h2>
-        <div class="guider">
-            <img src="guide1.jpg" alt="Guide 1" width="100" height="100">
-            <div class="guider-info">
-                <h3>John Doe</h3>
-                <p>Expert in European tours with over 10 years of experience.</p>
-                <p>Email: john.doe@example.com</p>
-            </div>
+    <div class="sidebar">
+        <h2>JOURNEY BEYOND</h2>
+        <ul>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Trips</a></li>
+            <li><a href="#">Service Providers</a></li>
+            <li><a href="#">Travelers</a></li>
+            <li><a href="#">Income Report</a></li>
+            <li><a href="#">Messages</a></li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="#">Sign Out</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <div class="search-bar">
+            <input type="text" placeholder="Search here...">
         </div>
-        <div class="guider">
-            <img src="guide2.jpg" alt="Guide 2" width="100" height="100">
-            <div class="guider-info">
-                <h3>Jane Smith</h3>
-                <p>Specializes in adventure tours in South America.</p>
-                <p>Email: jane.smith@example.com</p>
-            </div>
+        <div class="dashboard">
+            <div class="card">Total Sales</div>
+            <div class="card">Total Order</div>
+            <div class="card">Product Sold</div>
+            <div class="card">New Customers</div>
+            <div class="card">Total Revenue</div>
+            <div class="card">Customer Satisfaction</div>
+            <div class="card">Target vs Reality</div>
+            <div class="card">Sales Mapping by Country</div>
+            <div class="card">Volume vs Service Level</div>
         </div>
-    </section>
+    </div>
 </body>
 </html>
 
