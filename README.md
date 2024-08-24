@@ -77,11 +77,9 @@
         <h2>JOURNEY BEYOND</h2>
         <ul>
             <li><a href="#">Dashboard</a></li>
-            <li><a href="#">Availability</a></li>
-            <li><a href="#">Responds to bookings</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Odders</a></li>
             <li><a href="#">Payments</a></li>
-            <li><a href="#">Rates</a></li>
-            <li><a href="#">Managing Bookings</a></li>
             <li><a href="#">Sign Out</a></li>
         </ul>
     </div>
