@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0B362D;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background-color: #122E26;
+            padding: 30px;
+            border-radius: 10px;
+            width: 400px;
+            text-align: center;
+            color: white;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        input[type="text"], input[type="email"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 25px;
+            background-color: #FFF;
+            font-size: 16px;
+        }
+
+        button {
+            width: 100%;
+            padding: 15px;
+            background-color: #B4F154;
+            border: none;
+            border-radius: 25px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #122E26;
+            cursor: pointer;
+            margin: 15px 0;
+        }
+
+        .or {
+            margin: 10px 0;
+            color: #A7A7A7;
+        }
+
+        .google-button {
+            width: 100%;
+            padding: 15px;
+            background-color: white;
+            border: 2px solid #A7A7A7;
+            border-radius: 25px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .google-button img {
+            width: 20px;
+            margin-right: 10px;
+        }
+
+        .login-link {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #A7A7A7;
+        }
+
+        .login-link a {
+            color: #A7A7A7;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Create your account</h1>
+        <input type="text" placeholder="Full Name">
+        <input type="email" placeholder="Email">
+        <input type="password" placeholder="Password">
+        <button>Create account</button>
+        <div class="or">or</div>
+        <div class="google-button">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Logo_2013_Google.png" alt="Google logo">
+            Continue with Google
+        </div>
+        <div class="login-link">
+            Already have an account? <a href="#">Login</a>
+        </div>
+    </div>
+
+</body>
+</html>
