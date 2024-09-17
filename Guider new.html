@@ -1,63 +1,77 @@
-import React from 'react';
-import { Home, Package, ShoppingCart, CreditCard, Star, User, LogOut } from 'lucide-react';
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/Index.css">
+    <title>Journey Beyond Dashboard</title>
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <a href="#" class="logo">
+            <img src="/api/placeholder/40/40" alt="Logo">
+            <div class="logo-name">JOURNEY <br><span>BEYOND</span></div>
+        </a>
 
-const DashboardCard = ({ title, value }) => (
-  <div className="bg-white p-4 rounded-lg shadow-md">
-    <h3 className="text-lg font-semibold text-gray-700">{title}</h3>
-    <p className="text-2xl font-bold text-gray-900">{value}</p>
-  </div>
-);
-
-const Dashboard = () => {
-  return (
-    <div className="flex h-screen bg-gray-100">
-      {/* Sidebar */}
-      <aside className="w-64 bg-indigo-700 text-white p-6">
-        <div className="flex items-center mb-8">
-          <img src="/api/placeholder/40/40" alt="Logo" className="w-10 h-10 mr-3" />
-          <div>
-            <div className="font-bold">JOURNEY</div>
-            <div className="text-indigo-300">BEYOND</div>
-          </div>
-        </div>
-
-        <nav>
-          <ul className="space-y-2">
-            <li><a href="#" className="flex items-center p-2 bg-indigo-800 rounded"><Home className="mr-3" /> Dashboard</a></li>
-            <li><a href="#" className="flex items-center p-2 hover:bg-indigo-600 rounded"><Package className="mr-3" /> My Inventory</a></li>
-            <li><a href="#" className="flex items-center p-2 hover:bg-indigo-600 rounded"><ShoppingCart className="mr-3" /> Orders</a></li>
-            <li><a href="#" className="flex items-center p-2 hover:bg-indigo-600 rounded"><CreditCard className="mr-3" /> Payments</a></li>
-            <li><a href="#" className="flex items-center p-2 hover:bg-indigo-600 rounded"><Star className="mr-3" /> Reviews</a></li>
-            <li><a href="#" className="flex items-center p-2 hover:bg-indigo-600 rounded"><User className="mr-3" /> My Profile</a></li>
-          </ul>
-        </nav>
-
-        <div className="mt-auto">
-          <a href="#" className="flex items-center p-2 hover:bg-indigo-600 rounded">
-            <LogOut className="mr-3" /> Log out
-          </a>
-        </div>
-      </aside>
-
-      {/* Main Content */}
-      <main className="flex-1 p-8 overflow-auto">
-        <h1 className="text-3xl font-semibold mb-6">Dashboard</h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <DashboardCard title="Orders Completed" value="125" />
-          <DashboardCard title="Pending Orders" value="15" />
-          <DashboardCard title="Revenue" value="$12,345" />
-          <DashboardCard title="Customers" value="1200" />
-          <DashboardCard title="New Customers" value="35" />
-          <DashboardCard title="Reviews" value="98" />
-          <DashboardCard title="Total Bookings" value="20" />
-           <DashboardCard title="Updating Availability" value="30" />
-          <DashboardCard title="Responds to Bookings" value="19" />
-          <DashboardCard title="View of Payments" value="10" />
-          
-        </div>
-      </main>
+        <ul class="side-menu">
+            <li class="active"><a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" fill="currentColor"><path d="M520-600v-240h320v240H520ZM120-440v-400h320v400H120Zm400 320v-400h320v400H520Zm-400 0v-240h320v240H120Zm80-400h160v-240H200v240Zm400 320h160v-240H600v240Zm0-480h160v-80H600v80ZM200-200h160v-80H200v80Zm160-320Zm240-160Zm0 240ZM360-280Z"/></svg> Dashboard</a></li>
+            <li><a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" fill="currentColor"><path d="M620-163 450-333l56-56 114 114 226-226 56 56-282 282Zm220-397h-80v-200h-80v120H280v-120h-80v560h240v80H200q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h167q11-35 43-57.5t70-22.5q40 0 71.5 22.5T594-840h166q33 0 56.5 23.5T840-760v200ZM480-760q17 0 28.5-11.5T520-800q0-17-11.5-28.5T480-840q-17 0-28.5 11.5T440-800q0 17 11.5 28.5T480-760Z"/></svg> My Inventory</a></li>
+            <li><a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" fill="currentColor"><path d="M160-160v-516L82-846l72-34 94 202h464l94-202 72 34-78 170v516H160Zm240-280h160q17 0 28.5-11.5T600-480q0-17-11.5-28.5T560-520H400q-17 0-28.5 11.5T360-480q0 17 11.5 28.5T400-440ZM240-240h480v-358H240v358Zm0 0v-358 358Z"/></svg> Orders</a></li>
+            <li><a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" fill="currentColor"><path d="M560-440q-50 0-85-35t-35-85q0-50 35-85t85-35q50 0 85 35t35 85q0 50-35 85t-85 35ZM280-320q-33 0-56.5-23.5T200-400v-320q0-33 23.5-56.5T280-800h560q33 0 56.5 23.5T920-720v320q0 33-23.5 56.5T840-320H280Zm80-80h400q0-33 23.5-56.5T840-480v-160q-33 0-56.5-23.5T760-720H360q0 33-23.5 56.5T280-640v160q33 0 56.5 23.5T360-400Zm-80 240q-33 0-56.5-23.5T200-240v-80h80v80h480v-80h80v80q0 33-23.5 56.5T760-160H280Zm0-320v-320 320Z"/></svg> Payments</a></li>
+            <li><a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" fill="currentColor"><path d="m363-390 117-71 117 71-31-133 104-90-137-11-53-126-53 126-137 11 104 90-31 133ZM80-80v-720q0-33 23.5-56.5T160-880h640q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H240L80-80Zm126-240h594v-480H160v525l46-45Zm-46 0v-480 480Z"/></svg> Reviews</a></li>
+            <li><a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" fill="currentColor"><path d="M234-276q51-39 114-61.5T480-360q69 0 132 22.5T726-276q35-41 54.5-93T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 59 19.5 111t54.5 93Zm246-164q-59 0-99.5-40.5T340-580q0-59 40.5-99.5T480-720q59 0 99.5 40.5T620-580q0 59-40.5 99.5T480-440Zm0 360q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q53 0 100-15.5t86-44.5q-39-29-86-44.5T480-280q-53 0-100 15.5T294-220q39 29 86 44.5T480-160Zm0-360q26 0 43-17t17-43q0-26-17-43t-43-17q-26 0-43 17t-17 43q0 26 17 43t43 17Zm0-60Zm0 360Z"/></svg> My Profile</a></li>
+        </ul>
+        <a href="#" class="logout">
+            <span>Log out</span>
+        </a>
     </div>
-  );
-};
+
+    <!-- Main Content -->
+    <main>
+        <div class="dashboard">
+            <!-- Existing cards -->
+            <div class="card">
+                <h3>Orders Completed</h3>
+                <p>125</p>
+            </div>
+            <div class="card">
+                <h3>Pending Orders</h3>
+                <p>15</p>
+            </div>
+            <div class="card">
+                <h3>Revenue</h3>
+                <p>$12,345</p>
+            </div>
+            <div class="card">
+                <h3>Customers</h3>
+                <p>1200</p>
+            </div>
+            <div class="card">
+                <h3>New Customers</h3>
+                <p>35</p>
+            </div>
+            <div class="card">
+                <h3>Reviews</h3>
+                <p>98</p>
+            </div>
+
+            <div class="card">Total Bookings</div>
+            <div class="card">Managing Bookings</div>
+            <div class="card">Updating the availability</div>
+            <div class="card">Responds to bookings</div>
+            <div class="card">View of the payments</div>
+            <div class="card">Rate management</div>
+        </div>
+    </main>
+</body>
+</html>
+
 
 
