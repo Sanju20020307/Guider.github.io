@@ -3,108 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create Account</title>
+    <title>Color Labels</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #0B362D;
+            background-color: #fff;
+            padding: 20px;
+        }
+
+        .color-container {
             display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
+            flex-direction: column;
+            gap: 15px;
         }
 
-        .container {
-            background-color: #122E26;
-            padding: 30px;
-            border-radius: 10px;
-            width: 400px;
-            text-align: center;
-            color: white;
-        }
-
-        h1 {
-            margin-bottom: 20px;
-        }
-
-        input[type="text"], input[type="email"], input[type="password"] {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border: none;
-            border-radius: 25px;
-            background-color: #FFF;
-            font-size: 16px;
-        }
-
-        button {
-            width: 100%;
-            padding: 15px;
-            background-color: #B4F154;
-            border: none;
-            border-radius: 25px;
-            font-size: 18px;
-            font-weight: bold;
-            color: #122E26;
-            cursor: pointer;
-            margin: 15px 0;
-        }
-
-        .or {
-            margin: 10px 0;
-            color: #A7A7A7;
-        }
-
-        .google-button {
-            width: 100%;
-            padding: 15px;
-            background-color: white;
-            border: 2px solid #A7A7A7;
-            border-radius: 25px;
-            font-size: 16px;
-            font-weight: bold;
-            color: #000;
+        .color-item {
             display: flex;
-            justify-content: center;
             align-items: center;
-            cursor: pointer;
         }
 
-        .google-button img {
+        .color-circle {
             width: 20px;
+            height: 20px;
+            border-radius: 50%;
             margin-right: 10px;
         }
 
-        .login-link {
-            margin-top: 20px;
-            font-size: 14px;
-            color: #A7A7A7;
+        .primary-color {
+            background-color: #FF8C00; /* orange */
         }
 
-        .login-link a {
-            color: #A7A7A7;
-            text-decoration: none;
+        .secondary-color {
+            background-color: #FFC107; /* yellowish-orange */
+        }
+
+        .heading-color {
+            background-color: #002C2F; /* dark greenish-black */
+        }
+
+        .text-color {
+            background-color: #808080; /* grey */
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <h1>Create your account</h1>
-        <input type="text" placeholder="Full Name">
-        <input type="email" placeholder="Email">
-        <input type="password" placeholder="Password">
-        <button>Create account</button>
-        <div class="or">or</div>
-        <div class="google-button">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Logo_2013_Google.png" alt="Google logo">
-            Continue with Google
+    <div class="color-container">
+        <div class="color-item">
+            <div class="color-circle primary-color"></div>
+            <span>primary-color</span>
         </div>
-        <div class="login-link">
-            Already have an account? <a href="#">Login</a>
+        <div class="color-item">
+            <div class="color-circle secondary-color"></div>
+            <span>secondary-color</span>
+        </div>
+        <div class="color-item">
+            <div class="color-circle heading-color"></div>
+            <span>heading-color</span>
+        </div>
+        <div class="color-item">
+            <div class="color-circle text-color"></div>
+            <span>text-color</span>
         </div>
     </div>
 
 </body>
 </html>
+
