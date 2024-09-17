@@ -3,70 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Color Labels</title>
+    <title>Create Account</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #fff;
-            padding: 20px;
-        }
-
-        .color-container {
+            background-color: #F5F5F5; /* light grey background */
             display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
-
-        .color-item {
-            display: flex;
+            justify-content: center;
             align-items: center;
+            height: 100vh;
+            margin: 0;
         }
 
-        .color-circle {
+        .container {
+            background-color: #FFFFFF; /* white container */
+            padding: 30px;
+            border-radius: 10px;
+            width: 400px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            color: #FF6F61; /* coral color */
+        }
+
+        input[type="text"], input[type="email"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 25px;
+            background-color: #D3D3D3; /* grey for inputs */
+            font-size: 16px;
+        }
+
+        button {
+            width: 100%;
+            padding: 15px;
+            background-color: #FFB74D; /* orange-yellow button */
+            border: none;
+            border-radius: 25px;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            cursor: pointer;
+            margin: 15px 0;
+        }
+
+        .or {
+            margin: 10px 0;
+            color: #A7A7A7;
+        }
+
+        .google-button {
+            width: 100%;
+            padding: 15px;
+            background-color: #4CAF50; /* green for Google button */
+            border: none;
+            border-radius: 25px;
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .google-button img {
             width: 20px;
-            height: 20px;
-            border-radius: 50%;
             margin-right: 10px;
         }
 
-        .primary-color {
-            background-color: #FF8C00; /* orange */
+        .login-link {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #607D8B; /* greyish-blue link */
         }
 
-        .secondary-color {
-            background-color: #FFC107; /* yellowish-orange */
-        }
-
-        .heading-color {
-            background-color: #002C2F; /* dark greenish-black */
-        }
-
-        .text-color {
-            background-color: #808080; /* grey */
+        .login-link a {
+            color: #607D8B;
+            text-decoration: none;
         }
     </style>
 </head>
 <body>
 
-    <div class="color-container">
-        <div class="color-item">
-            <div class="color-circle primary-color"></div>
-            <span>primary-color</span>
+    <div class="container">
+        <h1>Create your account</h1>
+        <input type="text" placeholder="Full Name">
+        <input type="email" placeholder="Email">
+        <input type="password" placeholder="Password">
+        <button>Create account</button>
+        <div class="or">or</div>
+        <div class="google-button">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Logo_2013_Google.png" alt="Google logo">
+            Continue with Google
         </div>
-        <div class="color-item">
-            <div class="color-circle secondary-color"></div>
-            <span>secondary-color</span>
-        </div>
-        <div class="color-item">
-            <div class="color-circle heading-color"></div>
-            <span>heading-color</span>
-        </div>
-        <div class="color-item">
-            <div class="color-circle text-color"></div>
-            <span>text-color</span>
+        <div class="login-link">
+            Already have an account? <a href="#">Login</a>
         </div>
     </div>
 
 </body>
 </html>
+
 
